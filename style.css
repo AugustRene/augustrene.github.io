@@ -1,0 +1,142 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*Page Title*/
+header {
+    height: 300px;
+}
+header h1 {
+    font-size: 50px;
+    color:rgba(38, 39, 41, 0.5);
+}
+
+/*Global Navigation*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+}
+nav ul li a {
+    display: inline;
+    color:rgb(23, 30, 32);
+    padding: 14px 16px;
+    background-color:rgba(171, 176, 198, 0.5);
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+/*Body style*/
+body {
+    background-color:rgb(255, 255, 255);
+    font-family: "Poppins";
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/*Layout Container*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 12fr);
+    gap: 10px;
+    max-width: 1400px;
+    background-color:rgba(171, 176, 198, 0.5);
+}
+
+.container div {
+    background-color:rgba(140, 145, 168, 0.5);
+    border-radius: 20px;
+}
+
+/*Container Content*/
+/*Navigation Container*/
+.container div.nav{
+    grid-column: span 4;
+}
+
+/*Bio Container*/
+.container div.port {
+    grid-column: span 4;
+    padding: 40px;
+    height: 500px;
+}
+
+.container div.port h3 {
+    font-size:40px;
+}
+
+/*Gallery Container*/
+.container  .gallery {
+    grid-column: 6 / span 6;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    align-items: start;
+}
+
+main .card-2 {
+    overflow: hidden;
+    width: 100%;
+    height: 250px;
+}
+
+.card-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/*Ethos Section and Cards*/
+.ethos {
+grid-column: span 12;
+margin-top: 20px;
+}
+
+/*Tab Container*/
+.tab {
+overflow: hidden;
+    grid-column: span 12;
+    border: 1px solid #ccc;
+    background-color: rgba(171, 176, 198, 0.5);
+    border-radius: 20px;
+}
+
+/*Tab button design*/
+.tab button {
+ background-color: rgba(171, 176, 198, 0.5);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/*Tab function design*/
+.tab button:hover {
+  background-color: rgba(136, 140, 160, 0.5);
+}
+.tab button.active {
+ background-color: rgba(171, 176, 198, 0.5);
+}
+
+.tabcontent {
+    grid-column: span 12;
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid rgba(171, 176, 198, 0.5);
+    border-top: none;
+    border-radius: 20px;
+}
+
+/*Footer*/
+footer {
+    margin: 0;
+}
